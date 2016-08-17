@@ -1,0 +1,17 @@
+{
+    "name": "laudeon/fileon",
+    "description": "A PHP file watcher",
+    "keywords": ["watcher", "file watcher"],
+    "license": "MIT",
+    "version": "0.1.0",
+    "require": {
+        "php": ">=7",
+        "evenement/evenement": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fileon\\": "src",
+            "Test\\": "test"
+        }
+    }
+}
