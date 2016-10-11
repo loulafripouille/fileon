@@ -1,5 +1,5 @@
 # fileon [![Build Status](https://travis-ci.org/laudeon/fileon.svg?branch=master)](https://travis-ci.org/laudeon/fileon)
-PHP file watcher
+PHP.7 file watcher
 
 ## Install
 using [composer](https://getcomposer.org/doc/00-intro.md): `composer require laudeon/fileon`
@@ -25,3 +25,11 @@ $watcher->watch(function() use ($watcher) {
   }
 });
 ```
+
+## API
+
+### Watcher
+
+#### Watcher::__construct(Fileon\Resource $resource [, integer $sleep])
+- `$resource` is an instance of Fileon\Resource.
+- `$sleep`, optional, is the sleep time on each loop turn of the watcher, in microseconds. Defautl is 1000000
