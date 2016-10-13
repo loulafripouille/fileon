@@ -1,4 +1,4 @@
-# fileon [![Build Status](https://travis-ci.org/laudeon/fileon.svg?branch=master)](https://travis-ci.org/laudeon/fileon)
+# fileon [![Build Status](https://travis-ci.org/laudeon/fileon.svg?branch=master)](https://travis-ci.org/laudeon/fileon) [![Latest Stable Version](https://poser.pugx.org/laudeon/fileon/v/stable)](https://packagist.org/packages/laudeon/fileon)
 PHP.7 file watcher
 
 ## Install
@@ -33,3 +33,12 @@ $watcher->watch(function() use ($watcher) {
 #### Watcher::__construct(Fileon\Resource $resource [, integer $sleep])
 - `$resource` is an instance of Fileon\Resource.
 - `$sleep`, optional, is the sleep time on each loop turn of the watcher, in microseconds. Defautl is 1000000
+
+### Watcher::watch([, callable $callback):void
+- `$callback` must be a callable argument (function). It will be executed at the end of each loop turn.
+
+### Watcher::stop():void
+Stop the watcher.
+
+### Watcher::isStopped():bool
+Return the status of the watcher.
