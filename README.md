@@ -34,11 +34,11 @@ $watcher->watch(function() use ($watcher) {
 - `$resource` is an instance of Fileon\Resource.
 - `$sleep`, optional, is the sleep time on each loop turn of the watcher, in microseconds. Defautl is 1000000
 
-### Watcher::watch([, callable $callback):void
+#### Watcher::watch([, callable $callback):void
 - `$callback` must be a callable argument (function). It will be executed at the end of each loop turn.
 
-### Watcher::stop():void
+#### Watcher::stop():void
 Stop the watcher.
 
-### Watcher::isStopped():bool
+#### Watcher::isStopped():bool
 Return the status of the watcher.
